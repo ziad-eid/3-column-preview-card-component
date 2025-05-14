@@ -20,5 +20,5 @@ This is a simple and responsive frontend project that showcases three different 
 - CSS3 (Flexbox)
 - Google Fonts
 
-Live Demo:
-https://ziad-eid.github.io/3-column-preview-card-component/
+ Live Demo:
+ https://ziad-eid.github.io/3-column-preview-card-component/
