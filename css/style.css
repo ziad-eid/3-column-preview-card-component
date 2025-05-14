@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    height: auto;
+    background-color: hsl(0, 0%, 95%);
+}
+
+main {
+    display: flex;
+}
+
+@media (max-width: 991px) {
+    main {
+        flex-direction: column;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+main .card {
+    width: 320px;
+    padding: 50px;
+}
+
+main .card:nth-child(1) {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px;
+}
+
+main .card:nth-child(2) {
+    background-color: hsl(184, 100%, 22%);
+}
+
+main .card:nth-child(3) {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+}
+
+@media (max-width: 991px) {
+    main .card:nth-child(1) {
+        border-radius: 10px 10px 0 0;
+    }
+
+    main .card:nth-child(3) {
+        border-radius: 0 0 10px 10px;
+    }
+}
+
+main .card img {
+    margin-bottom: 30px;
+}
+
+main .card h1 {
+    font-family: "Big Shoulders";
+    color: #fff;
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+main .card p {
+    font-family: "Lexend Deca";
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.8;
+    width: 215px;
+    font-weight: 300;
+}
+
+main .card a {
+    font-family: "Lexend Deca";
+    display: block;
+    text-decoration: none;
+    background-color: #fff;
+    padding: 10px 30px;
+    width: fit-content;
+    margin-top: 90px;
+    border-radius: 25px;
+    font-size: 14px;
+    transition: .3s;
+    border: 2px solid #fff;
+}
+
+main .card:nth-child(1) a {
+    color: hsl(31, 77%, 52%);
+}
+
+main .card:nth-child(2) a {
+    color: hsl(184, 100%, 22%);
+}
+
+main .card:nth-child(3) a {
+    color: hsl(179, 100%, 13%);
+}
+
+main .card:nth-child(1) a:hover,
+main .card:nth-child(2) a:hover,
+main .card:nth-child(3) a:hover {
+    color: #fff;
+    background-color: transparent;
+}
